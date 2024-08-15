@@ -11,7 +11,7 @@ class Program
     static void Main(string[] args)
     {
         // SoftHSM2 kütüphanesi yolu
-        string libraryPath = @"C:\SoftHSM2\lib\softhsm2-x64.dll";
+        string libraryPath = @"C:\YourPath";
 
         // PKCS#11 kütüphanesi yükle
         Pkcs11InteropFactories factories = new Pkcs11InteropFactories();
@@ -32,7 +32,7 @@ class Program
             using (ISession session = slot.OpenSession(SessionType.ReadWrite))
             {
                 // PIN ile oturum aç
-                session.Login(CKU.CKU_USER, "123456");
+                session.Login(CKU.CKU_USER, "yourPassword");
 
                 // İmza anahtarını al
                 List<IObjectHandle> foundObjects = session.FindAllObjects(new List<IObjectAttribute>
@@ -58,7 +58,7 @@ class Program
                     SignXmlDocument(session, privateKeyHandle, xmlDoc);
 
                     // İmzalı belgeyi kaydet
-                    xmlDoc.Save("../signed_test.xml");
+                    xmlDoc.Save("/signed_test.xml");
                     Console.WriteLine("XML signing succeeded.");
                 }
                 catch (Exception ex)

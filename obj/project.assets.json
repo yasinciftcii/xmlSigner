@@ -209,11 +209,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Software\\C#\\Project\\odev1\\xmlSigner\\XmlSigner.csproj",
+      "projectUniqueName": "D:\\Software\\GitHub\\xmlSigner\\XmlSigner.csproj",
       "projectName": "XmlSigner",
-      "projectPath": "D:\\Software\\C#\\Project\\odev1\\xmlSigner\\XmlSigner.csproj",
+      "projectPath": "D:\\Software\\GitHub\\xmlSigner\\XmlSigner.csproj",
       "packagesPath": "C:\\Users\\yasin\\.nuget\\packages\\",
-      "outputPath": "D:\\Software\\C#\\Project\\odev1\\xmlSigner\\obj\\",
+      "outputPath": "D:\\Software\\GitHub\\xmlSigner\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
